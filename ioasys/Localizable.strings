@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  ioasys
+
+  Created by Junio Moquiuti on 19/01/20.
+  Copyright © 2020 Junio Moquiuti. All rights reserved.
+*/
+
+//Defaults
+"ok" = "Ok";
+"email" = "E-mail";
+"password" = "Senha";
+"enter" = "Entrar";
+
+//Sign_in
+"sign.in.title" = "Bem-vindo ao empresas";
+"sign.in.description" = "Lorem ipsum dolor sit amet, contetur adipiscing elit. Nunc accumsan.";

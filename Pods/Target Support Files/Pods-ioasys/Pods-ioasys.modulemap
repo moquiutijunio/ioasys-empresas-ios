@@ -1,0 +1,6 @@
+framework module Pods_ioasys {
+  umbrella header "Pods-ioasys-umbrella.h"
+
+  export *
+  module * { export * }
+}

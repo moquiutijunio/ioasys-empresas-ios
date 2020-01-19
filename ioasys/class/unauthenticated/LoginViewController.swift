@@ -7,12 +7,30 @@
 //
 
 import UIKit
+import Cartography
 
-final class LoginViewController: UIViewController {
-
+final class LoginViewController: BaseScrollViewController {
+    
+    private lazy var signInView: SignInView = {
+        return SignInView.instantiateFromNib(viewModel: SignInViewModel(callback: self))
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        applyLayout()
+        addChildViewToScrollView(childView: signInView)
+    }
+    
+    private func applyLayout() {
+        view.backgroundColor = UIColor(named: "beige")
+    }
+}
+
+// MARK: - SignInViewModelCallbackProtocol
+extension LoginViewController: SignInViewModelCallbackProtocol {
+    
+    func loginButtonDidTap(email: String, password: String) {
+        print("TODO loginButtonDidTap e:\(email) p:\(password)")
     }
 }

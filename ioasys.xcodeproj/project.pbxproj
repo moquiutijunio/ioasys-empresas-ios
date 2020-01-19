@@ -3,18 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6AD340F8E6B01F6EA4B1811 /* Pods_ioasys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328EF24CEDAEBEDB46624643 /* Pods_ioasys.framework */; };
+		F04BAE3723D4CA0C0068B687 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F04BAE3623D4CA0C0068B687 /* Localizable.strings */; };
+		F04BAE3923D4CB5A0068B687 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BAE3823D4CB5A0068B687 /* UIFont.swift */; };
+		F04BAE3C23D4D6A80068B687 /* BaseScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BAE3B23D4D6A80068B687 /* BaseScrollViewController.swift */; };
+		F04BAE4023D4EE8D0068B687 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BAE3F23D4EE8D0068B687 /* UIExtensions.swift */; };
 		F04D52E323D4B01D004E62C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D52E223D4B01D004E62C2 /* AppDelegate.swift */; };
 		F04D52E523D4B01D004E62C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D52E423D4B01D004E62C2 /* SceneDelegate.swift */; };
 		F04D52EC23D4B020004E62C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F04D52EB23D4B020004E62C2 /* Assets.xcassets */; };
 		F04D52EF23D4B020004E62C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04D52ED23D4B020004E62C2 /* LaunchScreen.storyboard */; };
 		F04D531723D4B29F004E62C2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D531623D4B29F004E62C2 /* LoginViewController.swift */; };
+		F04D531A23D4B922004E62C2 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D531923D4B922004E62C2 /* SignInViewModel.swift */; };
+		F04D531C23D4B929004E62C2 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D531B23D4B929004E62C2 /* SignInView.swift */; };
+		F04D531E23D4B930004E62C2 /* SignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04D531D23D4B930004E62C2 /* SignInView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B9BA107C217CCE66F5E8896 /* Pods-ioasys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys.debug.xcconfig"; path = "Target Support Files/Pods-ioasys/Pods-ioasys.debug.xcconfig"; sourceTree = "<group>"; };
+		328EF24CEDAEBEDB46624643 /* Pods_ioasys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ioasys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F40FAC0C4AB58120EE00F0 /* Pods-ioasys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys.release.xcconfig"; path = "Target Support Files/Pods-ioasys/Pods-ioasys.release.xcconfig"; sourceTree = "<group>"; };
+		F04BAE3623D4CA0C0068B687 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F04BAE3823D4CB5A0068B687 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		F04BAE3B23D4D6A80068B687 /* BaseScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScrollViewController.swift; sourceTree = "<group>"; };
+		F04BAE3F23D4EE8D0068B687 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		F04D52DF23D4B01D004E62C2 /* ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ioasys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04D52E223D4B01D004E62C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F04D52E423D4B01D004E62C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +37,9 @@
 		F04D52EE23D4B020004E62C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F04D52F023D4B020004E62C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F04D531623D4B29F004E62C2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F04D531923D4B922004E62C2 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		F04D531B23D4B929004E62C2 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		F04D531D23D4B930004E62C2 /* SignInView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6AD340F8E6B01F6EA4B1811 /* Pods_ioasys.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D8F8C67E62A938DF6EF5F5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				328EF24CEDAEBEDB46624643 /* Pods_ioasys.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		445B10F9F80C1B286C10207C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B9BA107C217CCE66F5E8896 /* Pods-ioasys.debug.xcconfig */,
+				54F40FAC0C4AB58120EE00F0 /* Pods-ioasys.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F04BAE3A23D4D6930068B687 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				F04BAE3B23D4D6A80068B687 /* BaseScrollViewController.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
 		F04D52D623D4B01D004E62C2 = {
 			isa = PBXGroup;
 			children = (
 				F04D52E123D4B01D004E62C2 /* ioasys */,
 				F04D52E023D4B01D004E62C2 /* Products */,
+				445B10F9F80C1B286C10207C /* Pods */,
+				3D8F8C67E62A938DF6EF5F5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F04D531423D4B1D2004E62C2 /* utils */,
+				F04BAE3A23D4D6930068B687 /* base */,
 				F04D531323D4B1C8004E62C2 /* model */,
 				F04D531223D4B1BF004E62C2 /* class */,
 				F04D52E223D4B01D004E62C2 /* AppDelegate.swift */,
@@ -62,6 +109,7 @@
 				F04D52EB23D4B020004E62C2 /* Assets.xcassets */,
 				F04D52ED23D4B020004E62C2 /* LaunchScreen.storyboard */,
 				F04D52F023D4B020004E62C2 /* Info.plist */,
+				F04BAE3623D4CA0C0068B687 /* Localizable.strings */,
 			);
 			path = ioasys;
 			sourceTree = "<group>";
@@ -84,6 +132,8 @@
 		F04D531423D4B1D2004E62C2 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				F04BAE3823D4CB5A0068B687 /* UIFont.swift */,
+				F04BAE3F23D4EE8D0068B687 /* UIExtensions.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -91,9 +141,20 @@
 		F04D531523D4B27A004E62C2 /* unauthenticated */ = {
 			isa = PBXGroup;
 			children = (
+				F04D531823D4B731004E62C2 /* view */,
 				F04D531623D4B29F004E62C2 /* LoginViewController.swift */,
 			);
 			path = unauthenticated;
+			sourceTree = "<group>";
+		};
+		F04D531823D4B731004E62C2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F04D531923D4B922004E62C2 /* SignInViewModel.swift */,
+				F04D531B23D4B929004E62C2 /* SignInView.swift */,
+				F04D531D23D4B930004E62C2 /* SignInView.xib */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F04D530923D4B021004E62C2 /* Build configuration list for PBXNativeTarget "ioasys" */;
 			buildPhases = (
+				77273912D17397E3858B659A /* [CP] Check Pods Manifest.lock */,
 				F04D52DB23D4B01D004E62C2 /* Sources */,
 				F04D52DC23D4B01D004E62C2 /* Frameworks */,
 				F04D52DD23D4B01D004E62C2 /* Resources */,
+				6618E75D06181752AB01295C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,19 +218,68 @@
 			buildActionMask = 2147483647;
 			files = (
 				F04D52EF23D4B020004E62C2 /* LaunchScreen.storyboard in Resources */,
+				F04BAE3723D4CA0C0068B687 /* Localizable.strings in Resources */,
 				F04D52EC23D4B020004E62C2 /* Assets.xcassets in Resources */,
+				F04D531E23D4B930004E62C2 /* SignInView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6618E75D06181752AB01295C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ioasys/Pods-ioasys-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ioasys/Pods-ioasys-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ioasys/Pods-ioasys-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77273912D17397E3858B659A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ioasys-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F04D52DB23D4B01D004E62C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04D531A23D4B922004E62C2 /* SignInViewModel.swift in Sources */,
 				F04D531723D4B29F004E62C2 /* LoginViewController.swift in Sources */,
+				F04BAE3923D4CB5A0068B687 /* UIFont.swift in Sources */,
+				F04BAE4023D4EE8D0068B687 /* UIExtensions.swift in Sources */,
 				F04D52E323D4B01D004E62C2 /* AppDelegate.swift in Sources */,
+				F04BAE3C23D4D6A80068B687 /* BaseScrollViewController.swift in Sources */,
+				F04D531C23D4B929004E62C2 /* SignInView.swift in Sources */,
 				F04D52E523D4B01D004E62C2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,15 +414,17 @@
 		};
 		F04D530A23D4B021004E62C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9BA107C217CCE66F5E8896 /* Pods-ioasys.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ioasys/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.-ioasys.ioasys";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ioasys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -319,15 +433,17 @@
 		};
 		F04D530B23D4B021004E62C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54F40FAC0C4AB58120EE00F0 /* Pods-ioasys.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ioasys/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.-ioasys.ioasys";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ioasys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
