@@ -9,4 +9,7 @@ target 'ioasys' do
   pod 'RxSwift'
   pod 'RxCocoa'
   
+  #API
+  pod 'Moya/RxSwift'
+  
 end

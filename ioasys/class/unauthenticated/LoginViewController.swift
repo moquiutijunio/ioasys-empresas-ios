@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import RxSwift
 import Cartography
 
 final class LoginViewController: BaseScrollViewController {
+    
+    private var loginDisposeBag: DisposeBag!
+    private let apiClient = APIClient()
     
     private lazy var signInView: SignInView = {
         return SignInView.instantiateFromNib(viewModel: SignInViewModel(callback: self))
@@ -31,6 +35,18 @@ final class LoginViewController: BaseScrollViewController {
 extension LoginViewController: SignInViewModelCallbackProtocol {
     
     func loginButtonDidTap(email: String, password: String) {
-        print("TODO loginButtonDidTap e:\(email) p:\(password)")
+        loginDisposeBag = DisposeBag()
+        
+        apiClient.loginWith(email: email, password: password)
+            .subscribe { (event) in
+                
+                switch event {
+                case .success:
+                    print("TODO event success response")
+                case .error(let error):
+                    print("TODO event error response \(error)")
+                }
+            }
+            .disposed(by: loginDisposeBag)
     }
 }

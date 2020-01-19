@@ -12,6 +12,10 @@
 "password" = "Senha";
 "enter" = "Entrar";
 
+//Errors
+"error.title" = "Ops...";
+"generic.error" = "Ops... Um erro desconhecido ocorreu, por favor tente novamente mais tarde.";
+
 //Sign_in
 "sign.in.title" = "Bem-vindo ao empresas";
 "sign.in.description" = "Lorem ipsum dolor sit amet, contetur adipiscing elit. Nunc accumsan.";

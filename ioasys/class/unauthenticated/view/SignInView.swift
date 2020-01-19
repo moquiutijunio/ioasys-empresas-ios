@@ -39,6 +39,11 @@ final class SignInView: UIView {
         super.awakeFromNib()
         
         applyLayout()
+        
+        #if DEBUG
+        emailTextField.text = "testeapple@ioasys.com.br"
+        passwordTextField.text = "12341234"
+        #endif
     }
     
     private func applyLayout() {
