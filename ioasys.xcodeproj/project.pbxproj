@@ -9,64 +9,23 @@
 /* Begin PBXBuildFile section */
 		F04D52E323D4B01D004E62C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D52E223D4B01D004E62C2 /* AppDelegate.swift */; };
 		F04D52E523D4B01D004E62C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D52E423D4B01D004E62C2 /* SceneDelegate.swift */; };
-		F04D52E723D4B01D004E62C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D52E623D4B01D004E62C2 /* ViewController.swift */; };
-		F04D52EA23D4B01D004E62C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04D52E823D4B01D004E62C2 /* Main.storyboard */; };
 		F04D52EC23D4B020004E62C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F04D52EB23D4B020004E62C2 /* Assets.xcassets */; };
 		F04D52EF23D4B020004E62C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04D52ED23D4B020004E62C2 /* LaunchScreen.storyboard */; };
-		F04D52FA23D4B021004E62C2 /* ioasysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D52F923D4B021004E62C2 /* ioasysTests.swift */; };
-		F04D530523D4B021004E62C2 /* ioasysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D530423D4B021004E62C2 /* ioasysUITests.swift */; };
+		F04D531723D4B29F004E62C2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D531623D4B29F004E62C2 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F04D52F623D4B021004E62C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F04D52D723D4B01D004E62C2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F04D52DE23D4B01D004E62C2;
-			remoteInfo = ioasys;
-		};
-		F04D530123D4B021004E62C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F04D52D723D4B01D004E62C2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F04D52DE23D4B01D004E62C2;
-			remoteInfo = ioasys;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F04D52DF23D4B01D004E62C2 /* ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ioasys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04D52E223D4B01D004E62C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F04D52E423D4B01D004E62C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F04D52E623D4B01D004E62C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F04D52E923D4B01D004E62C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F04D52EB23D4B020004E62C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F04D52EE23D4B020004E62C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F04D52F023D4B020004E62C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F04D52F523D4B021004E62C2 /* ioasysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ioasysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F04D52F923D4B021004E62C2 /* ioasysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioasysTests.swift; sourceTree = "<group>"; };
-		F04D52FB23D4B021004E62C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F04D530023D4B021004E62C2 /* ioasysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ioasysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F04D530423D4B021004E62C2 /* ioasysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioasysUITests.swift; sourceTree = "<group>"; };
-		F04D530623D4B021004E62C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F04D531623D4B29F004E62C2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F04D52DC23D4B01D004E62C2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F04D52F223D4B021004E62C2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F04D52FD23D4B021004E62C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,8 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				F04D52E123D4B01D004E62C2 /* ioasys */,
-				F04D52F823D4B021004E62C2 /* ioasysTests */,
-				F04D530323D4B021004E62C2 /* ioasysUITests */,
 				F04D52E023D4B01D004E62C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				F04D52DF23D4B01D004E62C2 /* ioasys.app */,
-				F04D52F523D4B021004E62C2 /* ioasysTests.xctest */,
-				F04D530023D4B021004E62C2 /* ioasysUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,10 +54,11 @@
 		F04D52E123D4B01D004E62C2 /* ioasys */ = {
 			isa = PBXGroup;
 			children = (
+				F04D531423D4B1D2004E62C2 /* utils */,
+				F04D531323D4B1C8004E62C2 /* model */,
+				F04D531223D4B1BF004E62C2 /* class */,
 				F04D52E223D4B01D004E62C2 /* AppDelegate.swift */,
 				F04D52E423D4B01D004E62C2 /* SceneDelegate.swift */,
-				F04D52E623D4B01D004E62C2 /* ViewController.swift */,
-				F04D52E823D4B01D004E62C2 /* Main.storyboard */,
 				F04D52EB23D4B020004E62C2 /* Assets.xcassets */,
 				F04D52ED23D4B020004E62C2 /* LaunchScreen.storyboard */,
 				F04D52F023D4B020004E62C2 /* Info.plist */,
@@ -110,22 +66,34 @@
 			path = ioasys;
 			sourceTree = "<group>";
 		};
-		F04D52F823D4B021004E62C2 /* ioasysTests */ = {
+		F04D531223D4B1BF004E62C2 /* class */ = {
 			isa = PBXGroup;
 			children = (
-				F04D52F923D4B021004E62C2 /* ioasysTests.swift */,
-				F04D52FB23D4B021004E62C2 /* Info.plist */,
+				F04D531523D4B27A004E62C2 /* unauthenticated */,
 			);
-			path = ioasysTests;
+			path = class;
 			sourceTree = "<group>";
 		};
-		F04D530323D4B021004E62C2 /* ioasysUITests */ = {
+		F04D531323D4B1C8004E62C2 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				F04D530423D4B021004E62C2 /* ioasysUITests.swift */,
-				F04D530623D4B021004E62C2 /* Info.plist */,
 			);
-			path = ioasysUITests;
+			path = model;
+			sourceTree = "<group>";
+		};
+		F04D531423D4B1D2004E62C2 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		F04D531523D4B27A004E62C2 /* unauthenticated */ = {
+			isa = PBXGroup;
+			children = (
+				F04D531623D4B29F004E62C2 /* LoginViewController.swift */,
+			);
+			path = unauthenticated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,42 +116,6 @@
 			productReference = F04D52DF23D4B01D004E62C2 /* ioasys.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F04D52F423D4B021004E62C2 /* ioasysTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F04D530C23D4B021004E62C2 /* Build configuration list for PBXNativeTarget "ioasysTests" */;
-			buildPhases = (
-				F04D52F123D4B021004E62C2 /* Sources */,
-				F04D52F223D4B021004E62C2 /* Frameworks */,
-				F04D52F323D4B021004E62C2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F04D52F723D4B021004E62C2 /* PBXTargetDependency */,
-			);
-			name = ioasysTests;
-			productName = ioasysTests;
-			productReference = F04D52F523D4B021004E62C2 /* ioasysTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F04D52FF23D4B021004E62C2 /* ioasysUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F04D530F23D4B021004E62C2 /* Build configuration list for PBXNativeTarget "ioasysUITests" */;
-			buildPhases = (
-				F04D52FC23D4B021004E62C2 /* Sources */,
-				F04D52FD23D4B021004E62C2 /* Frameworks */,
-				F04D52FE23D4B021004E62C2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F04D530223D4B021004E62C2 /* PBXTargetDependency */,
-			);
-			name = ioasysUITests;
-			productName = ioasysUITests;
-			productReference = F04D530023D4B021004E62C2 /* ioasysUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,14 +128,6 @@
 				TargetAttributes = {
 					F04D52DE23D4B01D004E62C2 = {
 						CreatedOnToolsVersion = 11.3;
-					};
-					F04D52F423D4B021004E62C2 = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = F04D52DE23D4B01D004E62C2;
-					};
-					F04D52FF23D4B021004E62C2 = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = F04D52DE23D4B01D004E62C2;
 					};
 				};
 			};
@@ -221,8 +145,6 @@
 			projectRoot = "";
 			targets = (
 				F04D52DE23D4B01D004E62C2 /* ioasys */,
-				F04D52F423D4B021004E62C2 /* ioasysTests */,
-				F04D52FF23D4B021004E62C2 /* ioasysUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,21 +156,6 @@
 			files = (
 				F04D52EF23D4B020004E62C2 /* LaunchScreen.storyboard in Resources */,
 				F04D52EC23D4B020004E62C2 /* Assets.xcassets in Resources */,
-				F04D52EA23D4B01D004E62C2 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F04D52F323D4B021004E62C2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F04D52FE23D4B021004E62C2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,52 +166,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04D52E723D4B01D004E62C2 /* ViewController.swift in Sources */,
+				F04D531723D4B29F004E62C2 /* LoginViewController.swift in Sources */,
 				F04D52E323D4B01D004E62C2 /* AppDelegate.swift in Sources */,
 				F04D52E523D4B01D004E62C2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F04D52F123D4B021004E62C2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F04D52FA23D4B021004E62C2 /* ioasysTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F04D52FC23D4B021004E62C2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F04D530523D4B021004E62C2 /* ioasysUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		F04D52F723D4B021004E62C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F04D52DE23D4B01D004E62C2 /* ioasys */;
-			targetProxy = F04D52F623D4B021004E62C2 /* PBXContainerItemProxy */;
-		};
-		F04D530223D4B021004E62C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F04D52DE23D4B01D004E62C2 /* ioasys */;
-			targetProxy = F04D530123D4B021004E62C2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		F04D52E823D4B01D004E62C2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F04D52E923D4B01D004E62C2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F04D52ED23D4B020004E62C2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.-ioasys.ioasys";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -460,87 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.-ioasys.ioasys";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		F04D530D23D4B021004E62C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ioasysTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.-ioasys.ioasysTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ioasys.app/ioasys";
-			};
-			name = Debug;
-		};
-		F04D530E23D4B021004E62C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ioasysTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.-ioasys.ioasysTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ioasys.app/ioasys";
-			};
-			name = Release;
-		};
-		F04D531023D4B021004E62C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ioasysUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.-ioasys.ioasysUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ioasys;
-			};
-			name = Debug;
-		};
-		F04D531123D4B021004E62C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ioasysUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.-ioasys.ioasysUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ioasys;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -561,24 +351,6 @@
 			buildConfigurations = (
 				F04D530A23D4B021004E62C2 /* Debug */,
 				F04D530B23D4B021004E62C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F04D530C23D4B021004E62C2 /* Build configuration list for PBXNativeTarget "ioasysTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F04D530D23D4B021004E62C2 /* Debug */,
-				F04D530E23D4B021004E62C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F04D530F23D4B021004E62C2 /* Build configuration list for PBXNativeTarget "ioasysUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F04D531023D4B021004E62C2 /* Debug */,
-				F04D531123D4B021004E62C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
