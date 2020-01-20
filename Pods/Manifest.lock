@@ -1,6 +1,9 @@
 PODS:
   - Alamofire (4.9.1)
   - Cartography (4.0.0)
+  - Kingfisher (5.12.0):
+    - Kingfisher/Core (= 5.12.0)
+  - Kingfisher/Core (5.12.0)
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
@@ -14,6 +17,7 @@ PODS:
 
 DEPENDENCIES:
   - Cartography
+  - Kingfisher
   - Moya/RxSwift
   - RxCocoa
   - RxSwift
@@ -22,6 +26,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - Cartography
+    - Kingfisher
     - Moya
     - Result
     - RxCocoa
@@ -30,11 +35,12 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Cartography: c5626d29056b20f1e95c017326ee4df57cc39ad8
+  Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
 
-PODFILE CHECKSUM: e5b00ae793dc32be8b791e0866260689e462d58a
+PODFILE CHECKSUM: 5cd121f001b96d9fff9295fc1d7791cff3931ae5
 
 COCOAPODS: 1.8.4

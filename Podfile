@@ -2,6 +2,9 @@ target 'ioasys' do
   use_frameworks!
   inhibit_all_warnings!
   
+  #Utilities
+  pod 'Kingfisher'
+  
   #Layout
   pod 'Cartography'
   

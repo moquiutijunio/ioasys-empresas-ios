@@ -44,6 +44,7 @@ final class SearchEnterprisesViewController: BaseTableViewController {
     
     private func registerTableView() {
         
+        tableView.register(UINib(nibName: EnterpriseTableViewCell.reuseId, bundle: nil), forCellReuseIdentifier: EnterpriseTableViewCell.reuseId)
         tableView.register(UINib(nibName: LoadingTableViewCell.reuseId, bundle: nil), forCellReuseIdentifier: LoadingTableViewCell.reuseId)
         tableView.register(UINib(nibName: ErrorTableViewCell.reuseId, bundle: nil), forCellReuseIdentifier: ErrorTableViewCell.reuseId)
     }
@@ -127,6 +128,11 @@ extension SearchEnterprisesViewController {
     
     override  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch enterprisesRequestResponse {
+        case .success(let enterprises):
+            let cell = tableView.dequeueReusableCell(withIdentifier: EnterpriseTableViewCell.reuseId, for: indexPath) as! EnterpriseTableViewCell
+            cell.bindIn(viewModel: EnterpriseViewModel(enterprise: enterprises[indexPath.row]))
+            return cell
+            
         case .loading:
             let cell = tableView.dequeueReusableCell(withIdentifier: LoadingTableViewCell.reuseId, for: indexPath) as! LoadingTableViewCell
             return cell

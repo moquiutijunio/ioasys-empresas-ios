@@ -15,6 +15,7 @@ struct Enterprise: Codable {
     var description: String?
     var typeName: String?
     var country: String?
+    var photo: URL?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -22,6 +23,7 @@ struct Enterprise: Codable {
         case description
         case typeName = "enterprise_type_name"
         case country
+        case photo
     }
 }
 
