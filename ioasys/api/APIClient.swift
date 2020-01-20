@@ -18,6 +18,8 @@ struct APIClientHost {
 protocol APIClientProtocol {
     
     func loginWith(email: String, password: String) -> Single<Void>
+    func getEnterprises(query: String) -> Single<[Enterprise]?>
+    func getEnterpriseDetails(id: Int) -> Single<Enterprise?>
 }
 
 class APIClient: APIClientProtocol {
@@ -27,7 +29,21 @@ class APIClient: APIClientProtocol {
             .request(.login(email: email, password: password))
             .processResponse()
             .createSession()
-            .map { _ in}
+            .map { _ in }
+    }
+    
+    func getEnterprises(query: String) -> Single<[Enterprise]?> {
+        return provider.rx
+            .request(.getEnterprises(query: query))
+            .processResponse()
+            .map { Enterprise.mapArray(data: $0.data) }
+    }
+    
+    func getEnterpriseDetails(id: Int) -> Single<Enterprise?> {
+        return provider.rx
+            .request(.getEnterpriseDetails(id: id))
+            .processResponse()
+            .map { Enterprise.map(data: $0.data) }
     }
 }
 

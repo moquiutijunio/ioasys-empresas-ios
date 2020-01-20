@@ -11,7 +11,6 @@ import Cartography
 
 class ErrorView: UIView {
     
-    private let errorViewConstraintGroup = ConstraintGroup()
     private var actionBlock: (() -> ())?
     
     private lazy var textLabel: UILabel = {
@@ -53,7 +52,7 @@ class ErrorView: UIView {
         backgroundColor = UIColor(white: 0, alpha: 0.85)
         addSubview(textLabel)
         addSubview(tryAgainButton)
-        constrain(self, textLabel, tryAgainButton, replace: errorViewConstraintGroup) { (view, label, button) in
+        constrain(self, textLabel, tryAgainButton) { (view, label, button) in
             label.center == view.center
             label.right >= view.right - 30
             label.left >= view.left + 30

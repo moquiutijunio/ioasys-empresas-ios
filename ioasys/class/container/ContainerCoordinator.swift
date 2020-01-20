@@ -18,6 +18,7 @@ enum ContentPageType {
 final class ContainerCoordinator: NSObject {
     
     private let window: UIWindow
+    private var currentPage: ContentPageType?
     
     private lazy var containerViewController: ContainerViewController = {
         return ContainerViewController(router: self)
@@ -39,6 +40,7 @@ final class ContainerCoordinator: NSObject {
 extension ContainerCoordinator: ContainerCoordinatorProtocol {
     
     func updateCurrentPage(_ page: ContentPageType) {
+        guard page != currentPage else { return }
         
         switch page {
         case .unauthenticated:
@@ -49,5 +51,7 @@ extension ContainerCoordinator: ContainerCoordinatorProtocol {
             let homeViewController = UINavigationController(rootViewController: HomeViewController())
             containerViewController.setCurrentViewController(viewController: homeViewController)
         }
+        
+        self.currentPage = page
     }
 }

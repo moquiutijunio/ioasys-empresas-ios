@@ -125,7 +125,7 @@ extension BaseViewController {
     }
 }
 
-// MARK: - Toast and Placeholders
+// MARK: - Placeholders
 extension BaseViewController {
     
     private func removePlaceholder() {

@@ -11,7 +11,12 @@ import Cartography
 
 class LoadingView: UIView {
     
-    private let loadingConstraintGroup = ConstraintGroup()
+    private lazy var hudView: UIView = {
+        let view = UIView()
+        view.layer.cornerRadius = 15
+        view.backgroundColor = .white
+        return view
+    }()
     
     private lazy var activityIndicatorView: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView(style: .large)
@@ -30,27 +35,23 @@ class LoadingView: UIView {
     
     init(type: LoadingViewType) {
         super.init(frame: .zero)
-        createScreen(type: type)
+        setupView(type: type)
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    private func createScreen(type: LoadingViewType) {
+    private func setupView(type: LoadingViewType) {
         
         switch type {
         case .hud:
             backgroundColor = UIColor(white: 0, alpha: 0.55)
             
-            let hudView = UIView()
-            hudView.layer.cornerRadius = 15
-            hudView.backgroundColor = .white
-            
             addSubview(hudView)
             addSubview(activityIndicatorView)
             
-            constrain(self, hudView, activityIndicatorView, replace: loadingConstraintGroup) { (view, hudView, indicator) in
+            constrain(self, hudView, activityIndicatorView) { (view, hudView, indicator) in
                 hudView.height == 150
                 hudView.width == 150
                 
@@ -65,7 +66,7 @@ class LoadingView: UIView {
             
             addSubview(activityIndicatorView)
             
-            constrain(self, activityIndicatorView, replace: loadingConstraintGroup) { (view, indicator) in
+            constrain(self, activityIndicatorView) { (view, indicator) in
                 indicator.center == view.center
             }
         }

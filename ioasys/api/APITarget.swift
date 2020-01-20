@@ -21,6 +21,8 @@ let provider = MoyaProvider<APITarget>( endpointClosure: { (target) -> Endpoint 
 enum APITarget {
     
     case login(email: String, password: String)
+    case getEnterprises(query: String)
+    case getEnterpriseDetails(id: Int)
 }
 
 extension APITarget: TargetType {
@@ -31,15 +33,16 @@ extension APITarget: TargetType {
     
     var path: String {
         switch self {
-        case .login:
-            return "/users/auth/sign_in"
+        case .login: return "/users/auth/sign_in"
+        case .getEnterprises: return "/enterprises"
+        case .getEnterpriseDetails(let id): return "/enterprises/\(id)"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        default:
-            return .post
+        case .login: return .post
+        default: return .get
         }
     }
     
@@ -73,6 +76,16 @@ extension APITarget: TargetType {
             ]
             
             return Task.requestParameters(parameters: bodyParams, encoding: JSONEncoding())
+        case .getEnterprises(let query):
+            let bodyParams: [String: Any] = [
+                "enterprise_types": 1,
+                "name": query
+            ]
+            
+            return Task.requestParameters(parameters: bodyParams, encoding: URLEncoding())
+            
+        default:
+            return Task.requestPlain
         }
     }
 }

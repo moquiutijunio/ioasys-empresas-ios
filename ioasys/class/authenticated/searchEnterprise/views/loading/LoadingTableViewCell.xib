@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JE6-JF-fyU" customClass="LoadingTableViewCell" customModule="ioasys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hfH-Ek-Z1r">
+                    <rect key="frame" x="16" y="17" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="DOP-1Y-UYa"/>
+                        <constraint firstAttribute="width" constant="40" id="kMe-Yp-zdB"/>
+                    </constraints>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYS-bC-ExS">
+                    <rect key="frame" x="68" y="12" width="330" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="oql-67-7ZO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="hfH-Ek-Z1r" firstAttribute="leading" secondItem="yne-fC-iju" secondAttribute="leading" constant="16" id="GJ2-nt-U9x"/>
+                <constraint firstItem="yne-fC-iju" firstAttribute="bottom" secondItem="YYS-bC-ExS" secondAttribute="bottom" constant="12" id="K0J-6J-qu4"/>
+                <constraint firstItem="yne-fC-iju" firstAttribute="trailing" secondItem="YYS-bC-ExS" secondAttribute="trailing" constant="16" id="Poe-OA-WF9"/>
+                <constraint firstItem="YYS-bC-ExS" firstAttribute="leading" secondItem="hfH-Ek-Z1r" secondAttribute="trailing" constant="12" id="WO9-Gp-ZFg"/>
+                <constraint firstItem="YYS-bC-ExS" firstAttribute="top" secondItem="JE6-JF-fyU" secondAttribute="top" constant="12" id="on0-tw-c8V"/>
+                <constraint firstItem="hfH-Ek-Z1r" firstAttribute="centerY" secondItem="JE6-JF-fyU" secondAttribute="centerY" id="pvQ-EZ-ZOG"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="yne-fC-iju"/>
+            <connections>
+                <outlet property="activityIndicationView" destination="hfH-Ek-Z1r" id="RCV-89-Ir5"/>
+                <outlet property="loadingLabel" destination="YYS-bC-ExS" id="g4m-rY-ffP"/>
+            </connections>
+            <point key="canvasLocation" x="-401.44927536231887" y="190.51339285714286"/>
+        </view>
+    </objects>
+</document>

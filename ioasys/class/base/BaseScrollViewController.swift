@@ -35,11 +35,6 @@ class BaseScrollViewController: BaseViewController {
     private func addScrollView() {
         
         view.addSubview(scrollView)
-        updateScrollViewConstraints()
-    }
-    
-    private func updateScrollViewConstraints() {
-        
         constrain(view, scrollView, replace: scrollViewConstraintGroup) { (view, scroll) in
             scroll.left == view.left
             scroll.right == view.right

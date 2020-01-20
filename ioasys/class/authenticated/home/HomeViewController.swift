@@ -32,13 +32,13 @@ final class HomeViewController: BaseViewController {
         
         navigationItem.titleView = UIImageView(image: UIImage(named: "img_logo_white"))
         addButtonOnNavigationBar(content: .image(image: UIImage(named: "ic_search")!), position: .right) { [unowned self] in
-            self.goToSearchEnterprise()
+            self.goToSearchEnterprises()
         }
     }
     
-    private func goToSearchEnterprise() {
-        let searchEnterpriseViewController = SearchEnterpriseViewController()
-        navigationController?.pushViewController(searchEnterpriseViewController, animated: false)
+    private func goToSearchEnterprises() {
+        let searchEnterprisesViewController = SearchEnterprisesViewController()
+        navigationController?.pushViewController(searchEnterprisesViewController, animated: false)
     }
 }
 
