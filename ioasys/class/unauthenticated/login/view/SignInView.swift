@@ -72,11 +72,7 @@ final class SignInView: UIView {
         descriptionLabel.textColor = UIColor(named: "charcoal_grey")
         descriptionLabel.text = NSLocalizedString("sign.in.description", comment: "")
         
-        loginButton.layer.cornerRadius = 6
-        loginButton.setTitleColor(.white, for: .normal)
-        loginButton.backgroundColor = UIColor(named: "greeny_blue")
-        loginButton.setTitle(NSLocalizedString("enter", comment: "").uppercased(), for: .normal)
-        loginButton.setBackgroundImage(UIImage.fromColor(color: UIColor(white: 0.88, alpha: 0.46)), for: .disabled)
+        loginButton.applyAppearance(appearance: .main, title: NSLocalizedString("enter", comment: "").uppercased(), cornerRadius: 6)
 
         emailTextField.font = .textStyle3
         emailTextField.borderStyle = .none

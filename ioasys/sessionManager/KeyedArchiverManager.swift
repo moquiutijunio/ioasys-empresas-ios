@@ -24,7 +24,7 @@ class KeyedArchiverManager {
     
     static func retrieveObjectWith<T: NSObject>(key: String, type: T.Type) -> T? {
         guard let data = UserDefaults.standard.object(forKey: key) as? Data,
-            let object = try? NSKeyedUnarchiver.unarchivedObject(ofClasses: [NSArray.self, type.self], from: data) as? T else {
+            let object = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data as Data) as? T else {
                 return nil
         }
         

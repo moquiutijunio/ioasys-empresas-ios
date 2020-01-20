@@ -29,4 +29,8 @@ extension UIFont {
     class var textStyle5: UIFont {
         return UIFont.systemFont(ofSize: 15, weight: .regular)
     }
+    
+    class var textStyle6: UIFont {
+      return UIFont.systemFont(ofSize: 18, weight: .regular)
+    }
 }

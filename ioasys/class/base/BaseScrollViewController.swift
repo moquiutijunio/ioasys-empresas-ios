@@ -9,7 +9,7 @@
 import UIKit
 import Cartography
 
-class BaseScrollViewController: UIViewController {
+class BaseScrollViewController: BaseViewController {
     
     private var scrollViewConstraintGroup = ConstraintGroup()
     

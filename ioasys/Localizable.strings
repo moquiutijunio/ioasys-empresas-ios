@@ -8,14 +8,21 @@
 
 //Defaults
 "ok" = "Ok";
+"cancel" = "Cancelar";
+"try.again" = "Tentar novamente";
 "email" = "E-mail";
 "password" = "Senha";
 "enter" = "Entrar";
+"search" = "Pesquisar";
 
 //Errors
 "error.title" = "Ops...";
 "generic.error" = "Ops... Um erro desconhecido ocorreu, por favor tente novamente mais tarde.";
 
 //Sign_in
+"sign.in.loading" = "Logando...";
 "sign.in.title" = "Bem-vindo ao empresas";
 "sign.in.description" = "Lorem ipsum dolor sit amet, contetur adipiscing elit. Nunc accumsan.";
+
+//Home
+"home.text" = "Clique na busca para iniciar.";
