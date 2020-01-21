@@ -59,7 +59,7 @@ final class SearchEnterprisesViewController: BaseTableViewController {
         let navigationBarWidth = navigationController.navigationBar.bounds.size.width
         let navigationBarPadding: CGFloat = navigationBarWidth * 0.12
         cancelButton.width = 71
-        cancelButton.setTitleTextAttributes([NSAttributedString.Key.font : UIFont.textStyle10], for: .normal)
+        cancelButton.setTitleTextAttributes([NSAttributedString.Key.font : UIFont.textStyleRegular(size: 17)], for: .normal)
         
         let searchBarWidth = navigationBarWidth - cancelButton.width - navigationBarPadding
         searchBar.frame.size.width = searchBarWidth

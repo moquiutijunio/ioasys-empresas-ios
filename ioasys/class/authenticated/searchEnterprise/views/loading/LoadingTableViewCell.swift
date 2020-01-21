@@ -32,7 +32,7 @@ final class LoadingTableViewCell: UITableViewCell {
         
         loadingLabel.text = NSLocalizedString("searching", comment: "")
         loadingLabel.textAlignment = .left
-        loadingLabel.font = .textStyle8
+        loadingLabel.font = .textStyleRegular(size: 14)
         loadingLabel.textColor = .black
         loadingLabel.numberOfLines = 0
         

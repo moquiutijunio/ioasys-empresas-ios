@@ -34,7 +34,7 @@ final class EnterpriseDetailsTableViewCell: UITableViewCell {
         selectionStyle = .none
     
         detailsLabel.textColor = UIColor(named: "dark_indigo")
-        detailsLabel.font = .textStyle5
+        detailsLabel.font = .textStyleRegular(size: 15)
         detailsLabel.textAlignment = .left
         detailsLabel.numberOfLines = 0
         

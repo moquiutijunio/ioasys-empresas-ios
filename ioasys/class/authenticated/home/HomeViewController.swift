@@ -14,7 +14,7 @@ final class HomeViewController: BaseViewController {
     private lazy var searchLabel: UILabel = {
         let searchLabel = UILabel()
         searchLabel.numberOfLines = 0
-        searchLabel.font = .textStyle6
+        searchLabel.font = .textStyleRegular(size: 18)
         searchLabel.textAlignment = .center
         searchLabel.text = NSLocalizedString("home.text", comment: "")
         searchLabel.textColor = UIColor(named: "charcoal_grey")

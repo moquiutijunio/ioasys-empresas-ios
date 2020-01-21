@@ -61,20 +61,20 @@ final class SignInView: UIView {
         passwordIconImageView.contentMode = .scaleAspectFit
         
         titleLabel.numberOfLines = 0
-        titleLabel.font = .textStyle
+        titleLabel.font = .textStyleBold(size: 16)
         titleLabel.textAlignment = .center
         titleLabel.textColor = UIColor(named: "charcoal_grey")
         titleLabel.text = NSLocalizedString("sign.in.title", comment: "").uppercased()
         
         descriptionLabel.numberOfLines = 0
-        descriptionLabel.font = .textStyle5
+        descriptionLabel.font = .textStyleRegular(size: 15)
         descriptionLabel.textAlignment = .center
         descriptionLabel.textColor = UIColor(named: "charcoal_grey")
         descriptionLabel.text = NSLocalizedString("sign.in.description", comment: "")
         
         loginButton.applyAppearance(appearance: .main, title: NSLocalizedString("enter", comment: "").uppercased(), cornerRadius: 6)
 
-        emailTextField.font = .textStyle3
+        emailTextField.font = .textStyleRegular(size: 15)
         emailTextField.borderStyle = .none
         emailTextField.backgroundColor = .clear
         emailTextField.autocorrectionType = .no
@@ -83,7 +83,7 @@ final class SignInView: UIView {
         emailTextField.placeholder = NSLocalizedString("email", comment: "")
         emailTextField.addToolBar(title: NSLocalizedString("ok", comment: ""))
         
-        passwordTextField.font = .textStyle3
+        passwordTextField.font = .textStyleRegular(size: 15)
         passwordTextField.borderStyle = .none
         passwordTextField.backgroundColor = .clear
         passwordTextField.isSecureTextEntry = true

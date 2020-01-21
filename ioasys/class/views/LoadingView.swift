@@ -27,7 +27,7 @@ class LoadingView: UIView {
     
     private lazy var textLabel: UILabel = {
         let textLabel = UILabel()
-        textLabel.font = .textStyle3
+        textLabel.font = .textStyleRegular(size: 18)
         textLabel.textColor = .black
         textLabel.numberOfLines = 0
         return textLabel

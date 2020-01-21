@@ -27,7 +27,7 @@ extension UIButton {
         case .main:
             setTitleColor(.white, for: .normal)
             backgroundColor = UIColor(named: "greeny_blue")
-            titleLabel?.font = .textStyle2
+            titleLabel?.font = .textStyleSemiBold(size: 20)
             setBackgroundImage(UIImage.fromColor(color: UIColor(white: 0.88, alpha: 0.46)), for: .disabled)
         }
     }

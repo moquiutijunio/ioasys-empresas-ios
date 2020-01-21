@@ -90,7 +90,7 @@ extension BaseViewController {
         navigationController.navigationBar.topItem?.backBarButtonItem = barButton
         navigationController.navigationBar.barTintColor = UIColor(named: "darkish_pink")
         navigationController.navigationBar.tintColor = .white
-        navigationController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.textStyle4]
+        navigationController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.textStyleBold(size: 15)]
     }
     
     @discardableResult  func addButtonOnNavigationBar(content: NavigationbarContentType, position: NavigationbarPosition, block: @escaping () -> Void) -> UIBarButtonItem {

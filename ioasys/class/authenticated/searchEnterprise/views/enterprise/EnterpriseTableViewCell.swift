@@ -38,15 +38,15 @@ final class EnterpriseTableViewCell: UITableViewCell {
         selectionStyle = .none
     
         nameLabel.textColor = UIColor(named: "dark_indigo")
-        nameLabel.font = .textStyle9
+        nameLabel.font = .textStyleBold(size: 18)
         nameLabel.textAlignment = .left
         
         typeNameLabel.textColor = UIColor(named: "warm_grey")
-        typeNameLabel.font = .textStyle8
+        typeNameLabel.font = .textStyleRegular(size: 14)
         typeNameLabel.textAlignment = .left
         
         countryLabel.textColor = UIColor(named: "warm_grey")
-        countryLabel.font = .textStyle8
+        countryLabel.font = .textStyleRegular(size: 14)
         countryLabel.textAlignment = .left
         
         photoImageView.backgroundColor = UIColor(named: "warm_grey")

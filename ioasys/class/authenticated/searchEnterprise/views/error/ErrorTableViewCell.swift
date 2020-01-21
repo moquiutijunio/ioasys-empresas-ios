@@ -23,7 +23,7 @@ final class ErrorTableViewCell: UITableViewCell {
         backgroundColor = .clear
         selectionStyle = .none
                
-        errorLabel.font = .textStyle8
+        errorLabel.font = .textStyleRegular(size: 15)
         errorLabel.textColor = .black
         errorLabel.numberOfLines = 0
     }
