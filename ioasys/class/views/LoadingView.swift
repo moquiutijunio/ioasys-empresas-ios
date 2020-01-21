@@ -33,51 +33,33 @@ class LoadingView: UIView {
         return textLabel
     }()
     
-    init(type: LoadingViewType) {
+    init() {
         super.init(frame: .zero)
-        setupView(type: type)
+        setupView()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    private func setupView(type: LoadingViewType) {
+    private func setupView() {
         
-        switch type {
-        case .hud:
-            backgroundColor = UIColor(white: 0, alpha: 0.55)
-            
-            addSubview(hudView)
-            addSubview(activityIndicatorView)
-            
-            constrain(self, hudView, activityIndicatorView) { (view, hudView, indicator) in
-                hudView.height == 150
-                hudView.width == 150
-                
-                hudView.center == view.center
-                
-                indicator.top == hudView.top + 40
-                indicator.centerX == hudView.centerX
-            }
-            
-        case .full:
-            backgroundColor = UIColor(named: "beige")
-            
-            addSubview(activityIndicatorView)
-            
-            constrain(self, activityIndicatorView) { (view, indicator) in
-                indicator.center == view.center
-            }
-        }
-    }
-    
-    private func addTextLabel() {
-        self.addSubview(textLabel)
+        backgroundColor = UIColor(white: 0, alpha: 0.55)
         
-        constrain(self, activityIndicatorView, textLabel) { (view, indicator, label) in
+        addSubview(hudView)
+        addSubview(textLabel)
+        addSubview(activityIndicatorView)
+        
+        constrain(self, hudView, textLabel, activityIndicatorView) { (view, hudView, label, indicator) in
+            hudView.height == 150
+            hudView.width == 150
+            hudView.center == view.center
+            
             label.top == indicator.bottom + 16
             label.centerX == view.centerX
+            
+            indicator.top == hudView.top + 40
+            indicator.centerX == hudView.centerX
         }
     }
 }
@@ -85,12 +67,8 @@ class LoadingView: UIView {
 extension LoadingView {
     
     func presentOn(parentView: UIView, with viewModel: PlaceholderViewModel) {
-        if let text = viewModel.text {
-            addTextLabel()
-            textLabel.text = text
-        } else {
-            textLabel.removeFromSuperview()
-        }
+    
+        textLabel.text = viewModel.text
         
         parentView.addSubview(self)
         constrain(parentView, self) { (container, loading) in

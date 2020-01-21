@@ -14,5 +14,9 @@ target 'ioasys' do
   
   #API
   pod 'Moya/RxSwift'
-  
+end
+
+target 'ioasysUITests' do
+    inherit! :search_paths
+    
 end

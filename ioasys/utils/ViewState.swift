@@ -10,5 +10,5 @@ enum ViewState {
     
     case normal
     case loading(PlaceholderViewModel)
-    case failure(PlaceholderViewModel)
+    case failure(AlertViewModel)
 }

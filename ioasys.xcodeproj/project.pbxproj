@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57158201D884DC2BD1A5314B /* libPods-ioasysUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDCC2372A296C1E35F9FAB9 /* libPods-ioasysUITests.a */; };
 		C6AD340F8E6B01F6EA4B1811 /* Pods_ioasys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328EF24CEDAEBEDB46624643 /* Pods_ioasys.framework */; };
 		F010F72923D5468900E74DA2 /* ContainerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010F72823D5468900E74DA2 /* ContainerCoordinator.swift */; };
 		F012917C23D5649A009CE255 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012917B23D56499009CE255 /* HomeViewController.swift */; };
@@ -18,6 +19,7 @@
 		F02D20F423D679C6000398F9 /* EnterpriseDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D20F223D679C6000398F9 /* EnterpriseDetailsTableViewCell.swift */; };
 		F02D20F523D679C6000398F9 /* EnterpriseDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02D20F323D679C6000398F9 /* EnterpriseDetailsTableViewCell.xib */; };
 		F02D20F723D67A70000398F9 /* EnterpriseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D20F623D67A70000398F9 /* EnterpriseDetailsViewModel.swift */; };
+		F02D20FF23D692F8000398F9 /* ioasysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D20FE23D692F8000398F9 /* ioasysUITests.swift */; };
 		F04BAE3723D4CA0C0068B687 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F04BAE3623D4CA0C0068B687 /* Localizable.strings */; };
 		F04BAE3923D4CB5A0068B687 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BAE3823D4CB5A0068B687 /* UIFont.swift */; };
 		F04BAE3C23D4D6A80068B687 /* BaseScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BAE3B23D4D6A80068B687 /* BaseScrollViewController.swift */; };
@@ -38,7 +40,6 @@
 		F04BAE6623D515EE0068B687 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BAE6523D515EE0068B687 /* ViewState.swift */; };
 		F04BAE6823D5160E0068B687 /* PlaceholderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BAE6723D5160E0068B687 /* PlaceholderViewModel.swift */; };
 		F04BAE6A23D516CB0068B687 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BAE6923D516CB0068B687 /* LoadingView.swift */; };
-		F04BAE6C23D5176A0068B687 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BAE6B23D5176A0068B687 /* ErrorView.swift */; };
 		F04BAE6E23D531840068B687 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BAE6D23D531840068B687 /* UIButton.swift */; };
 		F04D52E323D4B01D004E62C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D52E223D4B01D004E62C2 /* AppDelegate.swift */; };
 		F04D52E523D4B01D004E62C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D52E423D4B01D004E62C2 /* SceneDelegate.swift */; };
@@ -57,10 +58,22 @@
 		F0FD0A3F23D625810058D809 /* RequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FD0A3E23D625810058D809 /* RequestResponse.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F02D210123D692F8000398F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F04D52D723D4B01D004E62C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F04D52DE23D4B01D004E62C2;
+			remoteInfo = ioasys;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1B9BA107C217CCE66F5E8896 /* Pods-ioasys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys.debug.xcconfig"; path = "Target Support Files/Pods-ioasys/Pods-ioasys.debug.xcconfig"; sourceTree = "<group>"; };
 		328EF24CEDAEBEDB46624643 /* Pods_ioasys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ioasys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F40FAC0C4AB58120EE00F0 /* Pods-ioasys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasys.release.xcconfig"; path = "Target Support Files/Pods-ioasys/Pods-ioasys.release.xcconfig"; sourceTree = "<group>"; };
+		8CDCC2372A296C1E35F9FAB9 /* libPods-ioasysUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ioasysUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18481876BA26EDA6D9F2704 /* Pods-ioasysUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasysUITests.debug.xcconfig"; path = "Target Support Files/Pods-ioasysUITests/Pods-ioasysUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F010F72823D5468900E74DA2 /* ContainerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCoordinator.swift; sourceTree = "<group>"; };
 		F012917B23D56499009CE255 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F012917E23D56AA2009CE255 /* SearchEnterprisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEnterprisesViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +84,9 @@
 		F02D20F223D679C6000398F9 /* EnterpriseDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		F02D20F323D679C6000398F9 /* EnterpriseDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnterpriseDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		F02D20F623D67A70000398F9 /* EnterpriseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseDetailsViewModel.swift; sourceTree = "<group>"; };
+		F02D20FC23D692F8000398F9 /* ioasysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ioasysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F02D20FE23D692F8000398F9 /* ioasysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioasysUITests.swift; sourceTree = "<group>"; };
+		F02D210023D692F8000398F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F04BAE3623D4CA0C0068B687 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F04BAE3823D4CB5A0068B687 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		F04BAE3B23D4D6A80068B687 /* BaseScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScrollViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +107,6 @@
 		F04BAE6523D515EE0068B687 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		F04BAE6723D5160E0068B687 /* PlaceholderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderViewModel.swift; sourceTree = "<group>"; };
 		F04BAE6923D516CB0068B687 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		F04BAE6B23D5176A0068B687 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		F04BAE6D23D531840068B687 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		F04D52DF23D4B01D004E62C2 /* ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ioasys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04D52E223D4B01D004E62C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,9 +125,18 @@
 		F0FD0A3A23D624790058D809 /* ErrorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTableViewCell.swift; sourceTree = "<group>"; };
 		F0FD0A3B23D624790058D809 /* ErrorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorTableViewCell.xib; sourceTree = "<group>"; };
 		F0FD0A3E23D625810058D809 /* RequestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestResponse.swift; sourceTree = "<group>"; };
+		F2AFD825CF989D0824067A5D /* Pods-ioasysUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioasysUITests.release.xcconfig"; path = "Target Support Files/Pods-ioasysUITests/Pods-ioasysUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F02D20F923D692F8000398F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57158201D884DC2BD1A5314B /* libPods-ioasysUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F04D52DC23D4B01D004E62C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				328EF24CEDAEBEDB46624643 /* Pods_ioasys.framework */,
+				8CDCC2372A296C1E35F9FAB9 /* libPods-ioasysUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,6 +162,8 @@
 			children = (
 				1B9BA107C217CCE66F5E8896 /* Pods-ioasys.debug.xcconfig */,
 				54F40FAC0C4AB58120EE00F0 /* Pods-ioasys.release.xcconfig */,
+				C18481876BA26EDA6D9F2704 /* Pods-ioasysUITests.debug.xcconfig */,
+				F2AFD825CF989D0824067A5D /* Pods-ioasysUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -185,6 +212,15 @@
 				F02D20F323D679C6000398F9 /* EnterpriseDetailsTableViewCell.xib */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		F02D20FD23D692F8000398F9 /* ioasysUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F02D20FE23D692F8000398F9 /* ioasysUITests.swift */,
+				F02D210023D692F8000398F9 /* Info.plist */,
+			);
+			path = ioasysUITests;
 			sourceTree = "<group>";
 		};
 		F04BAE3A23D4D6930068B687 /* base */ = {
@@ -268,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				F04D52E123D4B01D004E62C2 /* ioasys */,
+				F02D20FD23D692F8000398F9 /* ioasysUITests */,
 				F04D52E023D4B01D004E62C2 /* Products */,
 				445B10F9F80C1B286C10207C /* Pods */,
 				3D8F8C67E62A938DF6EF5F5B /* Frameworks */,
@@ -278,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				F04D52DF23D4B01D004E62C2 /* ioasys.app */,
+				F02D20FC23D692F8000398F9 /* ioasysUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -357,7 +395,6 @@
 			isa = PBXGroup;
 			children = (
 				F04BAE6923D516CB0068B687 /* LoadingView.swift */,
-				F04BAE6B23D5176A0068B687 /* ErrorView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -393,6 +430,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F02D20FB23D692F8000398F9 /* ioasysUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F02D210323D692F8000398F9 /* Build configuration list for PBXNativeTarget "ioasysUITests" */;
+			buildPhases = (
+				44163DFED988C6A140ECC389 /* [CP] Check Pods Manifest.lock */,
+				F02D20F823D692F8000398F9 /* Sources */,
+				F02D20F923D692F8000398F9 /* Frameworks */,
+				F02D20FA23D692F8000398F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F02D210223D692F8000398F9 /* PBXTargetDependency */,
+			);
+			name = ioasysUITests;
+			productName = ioasysUITests;
+			productReference = F02D20FC23D692F8000398F9 /* ioasysUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		F04D52DE23D4B01D004E62C2 /* ioasys */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F04D530923D4B021004E62C2 /* Build configuration list for PBXNativeTarget "ioasys" */;
@@ -422,6 +478,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Junio Moquiuti";
 				TargetAttributes = {
+					F02D20FB23D692F8000398F9 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = F04D52DE23D4B01D004E62C2;
+					};
 					F04D52DE23D4B01D004E62C2 = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -441,11 +501,19 @@
 			projectRoot = "";
 			targets = (
 				F04D52DE23D4B01D004E62C2 /* ioasys */,
+				F02D20FB23D692F8000398F9 /* ioasysUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F02D20FA23D692F8000398F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F04D52DD23D4B01D004E62C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -464,6 +532,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		44163DFED988C6A140ECC389 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ioasysUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6618E75D06181752AB01295C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -506,11 +596,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F02D20F823D692F8000398F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F02D20FF23D692F8000398F9 /* ioasysUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F04D52DB23D4B01D004E62C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04BAE6C23D5176A0068B687 /* ErrorView.swift in Sources */,
 				F04BAE6E23D531840068B687 /* UIButton.swift in Sources */,
 				F04D531A23D4B922004E62C2 /* SignInViewModel.swift in Sources */,
 				F04D531723D4B29F004E62C2 /* LoginViewController.swift in Sources */,
@@ -554,6 +651,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F02D210223D692F8000398F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F04D52DE23D4B01D004E62C2 /* ioasys */;
+			targetProxy = F02D210123D692F8000398F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		F04D52ED23D4B020004E62C2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -566,6 +671,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F02D210423D692F8000398F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C18481876BA26EDA6D9F2704 /* Pods-ioasysUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ioasysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.-ioasys.ioasysUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ioasys;
+			};
+			name = Debug;
+		};
+		F02D210523D692F8000398F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2AFD825CF989D0824067A5D /* Pods-ioasysUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ioasysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.-ioasys.ioasysUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ioasys;
+			};
+			name = Release;
+		};
 		F04D530723D4B021004E62C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -721,6 +864,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F02D210323D692F8000398F9 /* Build configuration list for PBXNativeTarget "ioasysUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F02D210423D692F8000398F9 /* Debug */,
+				F02D210523D692F8000398F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F04D52DA23D4B01D004E62C2 /* Build configuration list for PBXProject "ioasys" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

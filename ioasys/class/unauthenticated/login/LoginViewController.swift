@@ -49,9 +49,9 @@ extension LoginViewController: SignInViewModelCallbackProtocol {
                     
                     alertActionViewModels.append(AlertActionViewModel(title: NSLocalizedString("cancel", comment: "")))
                     
-                    self.alertSubject.onNext(AlertViewModel(title: NSLocalizedString("error.title", comment: ""),
-                                                            message: error.localizedDescription,
-                                                            actions: alertActionViewModels))
+                    self.viewStateSubject.onNext(.failure(AlertViewModel(title: NSLocalizedString("error.title", comment: ""),
+                                                                         message: error.localizedDescription,
+                                                                         actions: alertActionViewModels)))
                 default:
                     break
                 }

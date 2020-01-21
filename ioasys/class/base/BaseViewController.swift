@@ -25,7 +25,6 @@ enum NavigationbarPosition {
 class BaseViewController: UIViewController {
     
     internal var disposeBag: DisposeBag!
-    internal let alertSubject = PublishSubject<AlertViewModel>()
     internal let viewStateSubject = PublishSubject<ViewState>()
     
     private var placeholderView: UIView?
@@ -55,19 +54,11 @@ class BaseViewController: UIViewController {
                     self.removePlaceholder()
                     
                 case .failure(let viewModel):
-                    self.showPlaceholderWith(viewModel: viewModel, type: .error)
+                    self.buidlAlertController(viewModel: viewModel)
                     
                 case .loading(let viewModel):
-                    self.showPlaceholderWith(viewModel: viewModel, type: .loading)
-                    
+                    self.buildLoadingView(viewModel: viewModel)
                 }
-            })
-            .disposed(by: disposeBag)
-        
-        alertSubject
-            .bind(onNext: { [weak self] (alertViewModel) in
-                guard let self = self else { return }
-                self.buidlAlertWith(viewModel: alertViewModel)
             })
             .disposed(by: disposeBag)
     }
@@ -125,53 +116,24 @@ extension BaseViewController {
     }
 }
 
-// MARK: - Placeholders
+// MARK: - Placeholders and AlertViewModel
 extension BaseViewController {
     
     private func removePlaceholder() {
         placeholderView?.removeFromSuperview()
     }
     
-    private func showPlaceholderWith(viewModel: PlaceholderViewModel, type: PlaceholderType) {
+    private func buildLoadingView(viewModel: PlaceholderViewModel) {
         view.endEditing(true)
         
-        let containerView: UIView
-        if viewModel.showOnNavigation {
-            containerView = navigationController?.view ?? view
-        }else {
-            containerView = view
-        }
-        
-        switch type {
-        case .loading:
-            showLoading(viewModel: viewModel, containerView: containerView)
-            
-        case .error:
-            showError(viewModel: viewModel, containerView: containerView)
-        }
-    }
-    
-    private func showLoading(viewModel: PlaceholderViewModel, containerView: UIView) {
         removePlaceholder()
         
-        let loadingView = LoadingView(type: viewModel.type)
-        loadingView.presentOn(parentView: containerView, with: viewModel)
+        let loadingView = LoadingView()
+        loadingView.presentOn(parentView: view, with: viewModel)
         self.placeholderView = loadingView
     }
     
-    private func showError(viewModel: PlaceholderViewModel, containerView: UIView) {
-        removePlaceholder()
-        
-        let errorView = ErrorView()
-        errorView.presentOn(parentView: containerView, with: viewModel)
-        self.placeholderView = errorView
-    }
-}
-
-// MARK: - AlertViewModel
-extension BaseViewController {
-    
-    internal func buidlAlertWith(viewModel: AlertViewModel) {
+    private func buidlAlertController(viewModel: AlertViewModel) {
         let alert = UIAlertController(title: viewModel.title, message: viewModel.message, preferredStyle: viewModel.preferredStyle)
                 
         viewModel.alertActions.forEach { (alertActionViewModel) in
