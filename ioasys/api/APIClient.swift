@@ -11,7 +11,7 @@ import RxSwift
 
 struct APIClientHost {
     
-    static let apiVersion = "v1/"
+    static let apiVersion = "v1"
     static let baseURL = URL(string: "https://empresas.ioasys.com.br/api/\(apiVersion)")!
 }
 

@@ -81,16 +81,16 @@ class BaseViewController: UIViewController {
 extension BaseViewController {
     
     private func applyNavigationAppearance() {
+        guard let navigationController = navigationController else { return }
         
-        navigationController?.navigationBar.barTintColor = UIColor(named: "darkish_pink")
-        navigationController?.navigationBar.tintColor = .white
-
         let backImage = UIImage(named: "ic_back")
         let barButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        navigationController?.navigationBar.backIndicatorImage = backImage
-        navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImage
-        navigationController?.navigationBar.topItem?.backBarButtonItem = barButton
-        navigationController?.interactivePopGestureRecognizer?.delegate = self
+        navigationController.navigationBar.backIndicatorImage = backImage
+        navigationController.navigationBar.backIndicatorTransitionMaskImage = backImage
+        navigationController.navigationBar.topItem?.backBarButtonItem = barButton
+        navigationController.navigationBar.barTintColor = UIColor(named: "darkish_pink")
+        navigationController.navigationBar.tintColor = .white
+        navigationController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.textStyle4]
     }
     
     @discardableResult  func addButtonOnNavigationBar(content: NavigationbarContentType, position: NavigationbarPosition, block: @escaping () -> Void) -> UIBarButtonItem {
@@ -179,9 +179,4 @@ extension BaseViewController {
         }
         present(alert, animated: true)
     }
-}
-
-// MARK: - UIGestureRecognizerDelegate
-extension BaseViewController: UIGestureRecognizerDelegate {
-
 }

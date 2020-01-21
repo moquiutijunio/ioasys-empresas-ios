@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct Enterprise: Codable {
+struct Enterprise: Decodable {
     
-    var id: Int?
-    var name: String?
+    var id: Int
+    var name: String
     var description: String?
     var typeName: String?
     var country: String?
@@ -21,16 +21,28 @@ struct Enterprise: Codable {
         case id
         case name = "enterprise_name"
         case description
-        case typeName = "enterprise_type_name"
         case country
         case photo
+        case enterpriseType = "enterprise_type"
+        case typeName = "enterprise_type_name"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try container.decode(Int.self, forKey: .id)
+        self.name = try container.decode(String.self, forKey: .name)
+        self.description = try? container.decode(String.self, forKey: .description)
+        self.country = try? container.decode(String.self, forKey: .country)
+        let enterpriseType = try? container.nestedContainer(keyedBy: CodingKeys.self, forKey: .enterpriseType)
+        self.typeName = try? enterpriseType?.decode(String.self, forKey: .typeName)
+        self.photo = try? container.decode(URL.self, forKey: .photo)
     }
 }
 
 extension Enterprise {
     
     static func map(json: Any) -> Enterprise? {
-        guard let data = try? JSONSerialization.data(withJSONObject: json, options: .prettyPrinted) ,
+        guard let data = try? JSONSerialization.data(withJSONObject: json, options: .prettyPrinted),
             let enterprise = try? JSONDecoder().decode(Enterprise.self, from: data) else {
                 return nil
         }

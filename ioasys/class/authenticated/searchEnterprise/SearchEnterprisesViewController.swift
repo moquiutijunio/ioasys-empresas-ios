@@ -59,12 +59,18 @@ final class SearchEnterprisesViewController: BaseTableViewController {
         let navigationBarWidth = navigationController.navigationBar.bounds.size.width
         let navigationBarPadding: CGFloat = navigationBarWidth * 0.12
         cancelButton.width = 71
+        cancelButton.setTitleTextAttributes([NSAttributedString.Key.font : UIFont.textStyle10], for: .normal)
         
         let searchBarWidth = navigationBarWidth - cancelButton.width - navigationBarPadding
         searchBar.frame.size.width = searchBarWidth
         
         let leftNavBarButton = UIBarButtonItem(customView: searchBar)
         navigationItem.leftBarButtonItem = leftNavBarButton
+    }
+    
+    private func goToEnterpriseDetails(with enterprise: Enterprise) {
+        let enterpriseDetailsViewController = EnterpriseDetailsViewController(enterprise: enterprise)
+        navigationController?.pushViewController(enterpriseDetailsViewController, animated: true)
     }
 }
  
@@ -113,9 +119,7 @@ extension SearchEnterprisesViewController {
 extension SearchEnterprisesViewController {
     
     private func reloadTableView() {
-        DispatchQueue.main.async { [unowned self] in
-            self.tableView.reloadData()
-        }
+        tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -148,6 +152,8 @@ extension SearchEnterprisesViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if case .success(let enterprises) = enterprisesRequestResponse {
+            goToEnterpriseDetails(with: enterprises[indexPath.row])
+        }
     }
 }

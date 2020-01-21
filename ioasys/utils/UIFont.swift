@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIFont {
+extension UIFont { //TODO Melhorar isso aqui
     
     class var textStyle2: UIFont {
         return UIFont.systemFont(ofSize: 20, weight: .semibold)
@@ -44,5 +44,9 @@ extension UIFont {
     
     class var textStyle9: UIFont {
         return UIFont.systemFont(ofSize: 18, weight: .bold)
+    }
+    
+    class var textStyle10: UIFont {
+        return UIFont.systemFont(ofSize: 17, weight: .regular)
     }
 }

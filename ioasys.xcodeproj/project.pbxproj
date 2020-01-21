@@ -14,6 +14,10 @@
 		F02D20EA23D65510000398F9 /* EnterpriseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D20E823D65510000398F9 /* EnterpriseTableViewCell.swift */; };
 		F02D20EB23D65510000398F9 /* EnterpriseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02D20E923D65510000398F9 /* EnterpriseTableViewCell.xib */; };
 		F02D20ED23D6587C000398F9 /* EnterpriseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D20EC23D6587C000398F9 /* EnterpriseViewModel.swift */; };
+		F02D20F023D67514000398F9 /* EnterpriseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D20EF23D67514000398F9 /* EnterpriseDetailsViewController.swift */; };
+		F02D20F423D679C6000398F9 /* EnterpriseDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D20F223D679C6000398F9 /* EnterpriseDetailsTableViewCell.swift */; };
+		F02D20F523D679C6000398F9 /* EnterpriseDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02D20F323D679C6000398F9 /* EnterpriseDetailsTableViewCell.xib */; };
+		F02D20F723D67A70000398F9 /* EnterpriseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D20F623D67A70000398F9 /* EnterpriseDetailsViewModel.swift */; };
 		F04BAE3723D4CA0C0068B687 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F04BAE3623D4CA0C0068B687 /* Localizable.strings */; };
 		F04BAE3923D4CB5A0068B687 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BAE3823D4CB5A0068B687 /* UIFont.swift */; };
 		F04BAE3C23D4D6A80068B687 /* BaseScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BAE3B23D4D6A80068B687 /* BaseScrollViewController.swift */; };
@@ -63,6 +67,10 @@
 		F02D20E823D65510000398F9 /* EnterpriseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseTableViewCell.swift; sourceTree = "<group>"; };
 		F02D20E923D65510000398F9 /* EnterpriseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnterpriseTableViewCell.xib; sourceTree = "<group>"; };
 		F02D20EC23D6587C000398F9 /* EnterpriseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseViewModel.swift; sourceTree = "<group>"; };
+		F02D20EF23D67514000398F9 /* EnterpriseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseDetailsViewController.swift; sourceTree = "<group>"; };
+		F02D20F223D679C6000398F9 /* EnterpriseDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		F02D20F323D679C6000398F9 /* EnterpriseDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnterpriseDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		F02D20F623D67A70000398F9 /* EnterpriseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseDetailsViewModel.swift; sourceTree = "<group>"; };
 		F04BAE3623D4CA0C0068B687 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F04BAE3823D4CB5A0068B687 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		F04BAE3B23D4D6A80068B687 /* BaseScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScrollViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +168,25 @@
 			path = enterprise;
 			sourceTree = "<group>";
 		};
+		F02D20EE23D674CF000398F9 /* enterpriseDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F02D20F123D679A7000398F9 /* views */,
+				F02D20EF23D67514000398F9 /* EnterpriseDetailsViewController.swift */,
+			);
+			path = enterpriseDetails;
+			sourceTree = "<group>";
+		};
+		F02D20F123D679A7000398F9 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F02D20F623D67A70000398F9 /* EnterpriseDetailsViewModel.swift */,
+				F02D20F223D679C6000398F9 /* EnterpriseDetailsTableViewCell.swift */,
+				F02D20F323D679C6000398F9 /* EnterpriseDetailsTableViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		F04BAE3A23D4D6930068B687 /* base */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +250,7 @@
 			children = (
 				F012917A23D56487009CE255 /* home */,
 				F012917D23D56A83009CE255 /* searchEnterprise */,
+				F02D20EE23D674CF000398F9 /* enterpriseDetails */,
 			);
 			path = authenticated;
 			sourceTree = "<group>";
@@ -423,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0FD0A3D23D624790058D809 /* ErrorTableViewCell.xib in Resources */,
+				F02D20F523D679C6000398F9 /* EnterpriseDetailsTableViewCell.xib in Resources */,
 				F04D52EF23D4B020004E62C2 /* LaunchScreen.storyboard in Resources */,
 				F02D20EB23D65510000398F9 /* EnterpriseTableViewCell.xib in Resources */,
 				F0FD0A3823D6245E0058D809 /* LoadingTableViewCell.xib in Resources */,
@@ -506,17 +535,20 @@
 				F0FD0A3C23D624790058D809 /* ErrorTableViewCell.swift in Sources */,
 				F04BAE5423D4FE2F0068B687 /* UserSessionDB.swift in Sources */,
 				F012917C23D5649A009CE255 /* HomeViewController.swift in Sources */,
+				F02D20F423D679C6000398F9 /* EnterpriseDetailsTableViewCell.swift in Sources */,
 				F0FD0A3723D6245E0058D809 /* LoadingTableViewCell.swift in Sources */,
 				F04BAE6623D515EE0068B687 /* ViewState.swift in Sources */,
 				F04BAE5F23D513580068B687 /* ContainerViewController.swift in Sources */,
 				F04BAE5823D5014C0068B687 /* UserSessionDataStore.swift in Sources */,
 				F04BAE5223D4FE1C0068B687 /* UserDB.swift in Sources */,
 				F04D531C23D4B929004E62C2 /* SignInView.swift in Sources */,
+				F02D20F023D67514000398F9 /* EnterpriseDetailsViewController.swift in Sources */,
 				F02D20EA23D65510000398F9 /* EnterpriseTableViewCell.swift in Sources */,
 				F0B4D87223D6143A00A92D54 /* Enterprise.swift in Sources */,
 				F04D52E523D4B01D004E62C2 /* SceneDelegate.swift in Sources */,
 				F04BAE5623D5013D0068B687 /* SessionManager.swift in Sources */,
 				F04BAE4323D4F73C0068B687 /* APIClient.swift in Sources */,
+				F02D20F723D67A70000398F9 /* EnterpriseDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
